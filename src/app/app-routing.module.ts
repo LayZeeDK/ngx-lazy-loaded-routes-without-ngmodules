@@ -1,8 +1,19 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+
+import { LazyLoadingComponent } from './lazy-loading.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'lazy-foo',
+    component: LazyLoadingComponent,
+  },
+  {
+    path: 'lazy-bar',
+    component: LazyLoadingComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
